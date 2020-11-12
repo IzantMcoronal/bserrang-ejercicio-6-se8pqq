@@ -5,31 +5,43 @@
 // Cuando acabéis, debéis descomentar las siguientes líneas de código y colocarlas despúes de todo lo que añadáis:
 
 //Creamos la clase person con sus propiedades
-
 class Person {
 
+  // Creamos la variable name de tipo string
   private name: string;
+
+  // Creamos la variable age de tipo number
   private age: number;
+
+  // Creamos la variable de tipo funcion de tipo string que no devuelva nada.
   public saySomething: (func: string) => void;
 
+  //Creamos el constructor Sobrecargado
   constructor ( name: string, age: number, saySomething: (func: string) => void){
     this.name = name;
     this.age = age;
     this.saySomething = saySomething;
   }
 
+//Creamos la funcion que no devuelve nada y saca por consola el nombre.
 public myNameIs(): void {
   console.log(this.name);
 }
 }
 
+// Creamos la clase Developer que extiende de Person
 class Developer extends Person {
 
+// Creamos la variable bestLanguage de tipo funcion de tipo string que nod evuelva nada.
 public bestLanguage:(func: string) => void;
 
+// Creamos el constructor sobrecargado
 constructor (name: string, age: number, saySomething: (func: string) => void, bestLanguage: (func: string) => void){
 
+// Utilizamos el atributo Super ya que extiende de person.
 super( name, age, saySomething);
+
+// 
 this.bestLanguage = bestLanguage;
 }
 
