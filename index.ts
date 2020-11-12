@@ -4,7 +4,24 @@
 // En el constructor de "Developer", debéis añadir los parámetros al constructor de la clase padre (super) y setear la propiedad "bestLanguage" sabiendo que es de tipo función que recibe una cadena.
 // Cuando acabéis, debéis descomentar las siguientes líneas de código y colocarlas despúes de todo lo que añadáis:
 
+//Creamos la clase person con sus propiedades
 
+class Person {
+
+  private name: string;
+  private age: number;
+  public saySomething: (string) => void;
+
+  constructor ( name: string, age: number, saySomething: (string) => void){
+    this.name = name;
+    this.age = age;
+    this.saySomething = saySomething;
+  }
+
+public myNameIs(): void {
+  console.log(this.name);
+}
+}
 
 
 
