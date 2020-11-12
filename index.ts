@@ -36,12 +36,6 @@ this.bestLanguage = bestLanguage;
 }
 
 
-
-
-
-
-
-
 const developer = new Developer(
    "pedro",
    35,
