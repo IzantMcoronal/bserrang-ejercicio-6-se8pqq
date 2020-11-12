@@ -10,9 +10,9 @@ class Person {
 
   private name: string;
   private age: number;
-  public saySomething: (string) => void;
+  public saySomething: (func: string) => void;
 
-  constructor ( name: string, age: number, saySomething: (string) => void){
+  constructor ( name: string, age: number, saySomething: (func: string) => void){
     this.name = name;
     this.age = age;
     this.saySomething = saySomething;
