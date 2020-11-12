@@ -41,13 +41,13 @@ constructor (name: string, age: number, saySomething: (func: string) => void, be
 // Utilizamos el atributo Super ya que extiende de person.
 super( name, age, saySomething);
 
-// 
+// seteamos el atributo 
 this.bestLanguage = bestLanguage;
 }
 
 }
 
-
+// Descomentamos este Bloque para ver el resultado final.
 const developer = new Developer(
    "pedro",
    35,
