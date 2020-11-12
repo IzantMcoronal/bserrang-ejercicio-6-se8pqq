@@ -23,7 +23,17 @@ public myNameIs(): void {
 }
 }
 
-class Developer
+class Developer extends Person {
+
+public bestLanguage:(func: string) => void;
+
+constructor (name: string, age: number, saySomething: (func: string) => void, bestLanguage: (func: string) => void){
+
+super( name, age, saySomething);
+this.bestLanguage = bestLanguage;
+}
+
+}
 
 
 
@@ -32,13 +42,13 @@ class Developer
 
 
 
-// const developer = new Developer(
-//   "pedro",
-//   35,
-//   something => console.log(something),
-//   language => console.log(language + " is the best language")
-// );
+const developer = new Developer(
+   "pedro",
+   35,
+   something => console.log(something),
+   language => console.log(language + " is the best language")
+ );
 
-// developer.myNameIs();
-// developer.saySomething('algo');
-// developer.bestLanguage('Javascript');
+ developer.myNameIs();
+ developer.saySomething('algo');
+ developer.bestLanguage('Javascript');
