@@ -4,6 +4,17 @@
 // En el constructor de "Developer", debéis añadir los parámetros al constructor de la clase padre (super) y setear la propiedad "bestLanguage" sabiendo que es de tipo función que recibe una cadena.
 // Cuando acabéis, debéis descomentar las siguientes líneas de código y colocarlas despúes de todo lo que añadáis:
 
+
+
+
+
+
+
+
+
+
+
+
 // const developer = new Developer(
 //   "pedro",
 //   35,
